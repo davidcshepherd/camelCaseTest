@@ -1,16 +1,6 @@
 package delft;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.beans.Transient;
-import java.util.*;
-import java.util.stream.*;
-
-import org.eclipse.osgi.internal.debug.Debug;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.*;
-import org.junit.jupiter.params.provider.*;
 
 class DelftWordUtilitiesTest {
 
