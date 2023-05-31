@@ -7,6 +7,7 @@ class DelftWordUtilitiesTest {
     @Test 
     public void testCamelCase(){
         assert(DelftWordUtilities.toCamelCase("bobby", false, null).equals("bobby"));
+        assert(DelftWordUtilities.toCamelCase("BObby", false, null).equals("bobby"));
         assert(DelftWordUtilities.toCamelCase("", false, null).equals(""));
         DelftWordUtilities.toCamelCase(null, false, null);
         assert(DelftWordUtilities.toCamelCase("bobby", true, null).equals("Bobby"));
