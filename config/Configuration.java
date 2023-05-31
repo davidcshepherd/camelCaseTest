@@ -23,6 +23,11 @@ public class Configuration extends RunConfiguration {
     public List<String> classesUnderTest() {
         return List.of("delft.DelftWordUtilities");
     }
+
+    @Override
+    public int numberOfMutationsToConsider() {
+        return 9;
+    }
   
     
 
