@@ -13,7 +13,7 @@ import org.junit.jupiter.params.provider.*;
 class DelftWordUtilitiesTest {
 
     @Test 
-    public void testCamelCase{
+    public void testCamelCase(){
         assert(DelftWordUtilities.toCamelCase("bobby", false, null).equals("bobby"));
         assert(DelftWordUtilities.toCamelCase("bobby", true, null).equals("Bobby"));
     }
