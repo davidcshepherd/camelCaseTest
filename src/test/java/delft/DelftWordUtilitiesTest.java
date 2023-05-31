@@ -12,6 +12,10 @@ class DelftWordUtilitiesTest {
         assert(DelftWordUtilities.toCamelCase("bobby", true, null).equals("Bobby"));
         assert(DelftWordUtilities.toCamelCase("bobbypsue", false, 'p').equals("bobbySue"));
         assert(DelftWordUtilities.toCamelCase("bobby;sue", false, ';').equals("bobbySue"));
+        assert(DelftWordUtilities.toCamelCase(";bobby;sue", true, ';').equals("BobbySue"));
+        assert(DelftWordUtilities.toCamelCase(";bobby;sue", false, ';').equals("bobbySue"));
+        assert(DelftWordUtilities.toCamelCase("bobby;;sue", false, ';').equals("bobbySue"));
+        assert(DelftWordUtilities.toCamelCase("bobby;;;;;;;;sue", false, ';').equals("bobbySue"));
     }
 
 
